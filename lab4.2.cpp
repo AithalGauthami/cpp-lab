@@ -6,7 +6,7 @@ class MyString {
 char *data;
 public:
 MyString(const char *s) {
-// parameterized ctor
+
 data = new char[strlen(s) + 1];
 strcpy(data, s);
 }
