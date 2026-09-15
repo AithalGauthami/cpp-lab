@@ -8,7 +8,7 @@ class Stack
     int size;
 
 public:
-    // Constructor
+    
     Stack(int n)
     {
         size = n;
@@ -16,7 +16,7 @@ public:
         top = -1;
     }
 
-    // Push
+    
     void push(int x)
     {
         if (top == size - 1)
@@ -28,7 +28,7 @@ public:
         }
     }
 
-    // Pop
+    
     void pop()
     {
         if (top == -1)
@@ -40,7 +40,7 @@ public:
         }
     }
 
-    // Display
+   
     void display()
     {
         for (int i = top; i >= 0; i--)
@@ -49,7 +49,7 @@ public:
         cout << endl;
     }
 
-    // Destructor
+    
     ~Stack()
     {
         delete[] a;
